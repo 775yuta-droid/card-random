@@ -289,3 +289,105 @@ button:disabled {
     transform: translate3d(12px, 0, 0) rotate(5deg);
   }
 }
+
+/* レスポンシブ対応 (Mobile) */
+@media (max-width: 600px), (max-height: 650px) {
+  body {
+    padding: 10px;
+    justify-content: flex-start;
+    padding-top: 30px;
+  }
+
+  .main-title {
+    margin-bottom: 20px;
+  }
+
+  #game-container {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .deck-stack,
+  .card {
+    width: 132px;
+    height: 186px;
+    border-width: 4px;
+    box-shadow:
+      -1px 1px 0 #000,
+      -2px 2px 0 #000,
+      -3px 3px 0 #000,
+      -4px 4px 0 #000,
+      -5px 5px 0 #000,
+      -6px 6px 10px rgba(0, 0, 0, 0.8);
+  }
+
+  .deck-stack:hover {
+    transform: none;
+  }
+
+  .deck-stack:active {
+    transform: translate(-2px, 2px);
+    box-shadow:
+      -1px 1px 0 #000,
+      -2px 2px 0 #000,
+      -3px 3px 0 #000,
+      -4px 4px 5px rgba(0, 0, 0, 0.8);
+  }
+
+  #deal-area {
+    width: 152px;
+    height: 206px;
+  }
+
+  .card-face {
+    border-width: 4px;
+    box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.8);
+  }
+
+  .card-front {
+    font-size: 5.4rem;
+    text-shadow:
+      2px 2px 0 #fff,
+      -2px -2px 0 #fff,
+      2px -2px 0 #fff,
+      -2px 2px 0 #fff,
+      0px 2px 0 #fff,
+      0px -2px 0 #fff,
+      2px 0px 0 #fff,
+      -2px 0px 0 #fff,
+      4px 4px 0 var(--theme-red);
+  }
+
+  .setsu-mark {
+    font-size: 1.8rem;
+    bottom: 5px;
+    right: 5px;
+  }
+
+  #controls {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  button {
+    padding: 10px 15px;
+    font-size: 1.1rem;
+    border-width: 3px;
+    box-shadow: 4px 4px 0 #000;
+  }
+
+  button:hover:not(:disabled) {
+    transform: none;
+    box-shadow: 4px 4px 0 var(--theme-red);
+  }
+
+  button:active:not(:disabled) {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0 #000;
+  }
+}
