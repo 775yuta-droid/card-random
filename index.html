@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>しりとり工夫したらまあまあ盛り上がる説</title>
+  <meta name="description" content="水曜日のダウンタウン風 フラッシュカード">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <h1 class="main-title">しりとり工夫したら<br><span class="highlight">まあまあ盛り上がる説</span></h1>
+
+  <div id="game-container">
+    <div id="deck" class="deck-stack" title="カードを配る">
+    </div>
+
+    <div id="deal-area">
+      <!-- Cards will be dealt here -->
+    </div>
+  </div>
+
+  <div id="controls">
+    <button id="shuffle-btn">シャッフル</button>
+    <button id="undo-btn" disabled>戻す</button>
+    <button id="deal-btn">カードをめくる</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
